@@ -13,5 +13,6 @@ public class Collatz {
 				System.out.print(" " + N);
 			}
 		}
+     
 	}
-}
+}  
