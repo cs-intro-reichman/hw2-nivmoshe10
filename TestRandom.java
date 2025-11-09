@@ -15,7 +15,7 @@ public  class  TestRandom {
 		else {
 			small = small + 1;
 
-			}
+		    	}
 		}
 		if (small > 0) {
 			System.out.println("> 0.5: " + big + " times");
