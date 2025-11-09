@@ -29,5 +29,5 @@ public class TimeCalc {
     System.out.println(clock11 + ":" + clock2);
 }
    }
-    }
+ }
 
