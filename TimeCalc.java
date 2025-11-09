@@ -16,8 +16,18 @@ public class TimeCalc {
 
     int clock2 = (allminutes % 60);
 
-    System.out.println(clock11 + ":" + clock2);
-
-
-    }
+   if (clock11 < 10 && clock2 < 10) {
+    System.out.println("0" + clock11 + ":0" + clock2);
 }
+    else if (clock11 < 10) {
+    System.out.println("0" + clock11 + ":" + clock2);
+}
+    else if (clock2 < 10) {
+    System.out.println(clock11 + ":0" + clock2);
+}
+    else {
+    System.out.println(clock11 + ":" + clock2);
+}
+   }
+    }
+
