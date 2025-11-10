@@ -1,16 +1,25 @@
-// Demonstrates the Collatz conjecture.
 public class Collatz {
     public static void main(String[] args) {
-        int N = Integer.parseInt(args[0]);
-        System.out.print(N);
+        int N = Integer.parseInt(args[0]); 
 
-        while (N != 1) {
-            if (N % 2 == 0)
-                N = N / 2;
-            else
-                N = 3 * N + 1;
+        for (int i = 1; i <= N; i++) {   
+            int num = i;                 
+            int steps = 1;               
 
-            System.out.print(" " + N);
+            System.out.print(i);  
+
+            while (num != 1) {           
+                if (num % 2 == 0) {
+                    num = num / 2;       
+                } else {
+                    num = 3 * num + 1;   
+                }
+
+                System.out.print(" " + num);
+                steps++;                 
+            }
+            System.out.println(" (" + steps + ")"); 
         }
+        System.out.println("Every one of the first " + N + " hailstone sequences reached 1.");
     }
 }
